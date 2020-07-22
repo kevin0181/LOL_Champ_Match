@@ -1,0 +1,3 @@
+User-agent: *
+Allow:/
+Sitemap:https://champmatch.netlify.app/sitemap.xml
