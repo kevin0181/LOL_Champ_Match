@@ -163,6 +163,7 @@ body {
 }
 .warning{
 	text-align:center;
+	margin-bottom:100px;
 }
 
 /* On screens that are 600px or less, set the background color to olive */

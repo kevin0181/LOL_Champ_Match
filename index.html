@@ -21,7 +21,7 @@
 			integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
 			crossorigin="anonymous"
 		/>
-		<!-- Go to www.addthis.com/dashboard to customize your tools -->
+		<!-- Go to www.addthis.com/dashboard to customize your tools 공유하기 -->
 		<script
 			type="text/javascript"
 			src="//s7.addthis.com/js/300/addthis_widget.js#pubid=ra-5f101088b7fe2179"
@@ -137,7 +137,19 @@
 									</button>
 								</div>
 								<div class="modal-body">
-									<!-- 광고 -->
+									<!-- 다시하기 광고 -->
+									<ins
+										class="kakao_ad_area"
+										style="display: none;"
+										data-ad-unit="DAN-1ji4zubrn0mk7"
+										data-ad-width="300"
+										data-ad-height="250"
+									></ins>
+									<script
+										type="text/javascript"
+										src="//t1.daumcdn.net/kas/static/ba.min.js"
+										async
+									></script>
 								</div>
 								<div class="modal-footer">
 									<button
@@ -193,12 +205,22 @@
 								</div>
 								<div class="modal-body">
 									<!-- 공유하기 광고 부분 -->
-
-									<!--공유하기-->
-									<div
-										class="mt-5 addthis_inline_share_toolbox_wrde"
+									<ins
+										class="kakao_ad_area"
 										style="display: none;"
-									></div>
+										data-ad-unit="DAN-ts1z01hdgz1g"
+										data-ad-width="300"
+										data-ad-height="250"
+									></ins>
+									<script
+										type="text/javascript"
+										src="//t1.daumcdn.net/kas/static/ba.min.js"
+										async
+									></script>
+									<!--공유하기-->
+
+									<!-- Go to www.addthis.com/dashboard to customize your tools -->
+									<div class="addthis_inline_share_toolbox_guby"></div>
 								</div>
 								<div class="modal-footer">
 									<button
@@ -212,8 +234,6 @@
 							</div>
 						</div>
 					</div>
-
-					<!-- Go to www.addthis.com/dashboard to customize your tools -->
 				</div>
 			</div>
 		</div>
@@ -221,7 +241,17 @@
 			사용하신 사진 데이터는 서버에 저장되지 않으니 안심하고 사용하세요.
 		</div>
 		<!-- 하단 광고 -->
-
+		<div class="container mt-5">
+			<ins
+				class="kakao_ad_area"
+				style="display: none;"
+				data-ad-unit="DAN-qdqh7xuksyeo"
+				data-ad-width="320"
+				data-ad-height="100"
+			></ins>
+		</div>
+		<!-- -->
+		<script type="text/javascript" src="//t1.daumcdn.net/kas/static/ba.min.js" async></script>
 		<script src="https://cdn.jsdelivr.net/npm/@tensorflow/tfjs@1.3.1/dist/tf.min.js"></script>
 		<script src="https://cdn.jsdelivr.net/npm/@teachablemachine/image@0.8/dist/teachablemachine-image.min.js"></script>
 		<!-- Optional JavaScript -->
@@ -338,7 +368,12 @@
 							const classPrediction = maxPeak.className + '를 가장 닮으셨네요!!';
 							labelContainer.childNodes[0].innerHTML = classPrediction;
 							var Champ_image = document.getElementById('Champ_image');
-							Champ_image.setAttribute('src','http://ddragon.leagueoflegends.com/cdn/10.14.1/img/champion/' +key +'.png');
+							Champ_image.setAttribute(
+								'src',
+								'http://ddragon.leagueoflegends.com/cdn/10.14.1/img/champion/' +
+									key +
+									'.png'
+							);
 
 							console.log(key);
 						}
@@ -357,6 +392,32 @@
 			});
 		</script>
 		<!-- 댓글 -->
+		<div class="container">
+			<div id="disqus_thread"></div>
+			<script>
+				/**
+				 *  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
+				 *  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
+				/*
+var disqus_config = function () {
+this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
+this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+};
+*/
+				(function () {
+					// DON'T EDIT BELOW THIS LINE
+					var d = document,
+						s = d.createElement('script');
+					s.src = 'https://nen-3.disqus.com/embed.js';
+					s.setAttribute('data-timestamp', +new Date());
+					(d.head || d.body).appendChild(s);
+				})();
+			</script>
+			<noscript
+				>Please enable JavaScript to view the
+				<a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript
+			>
+		</div>
 
 		<!-- Copyright (c) 2020 by Aaron Vanston (https://codepen.io/aaronvanston/pen/yNYOXR)
 
